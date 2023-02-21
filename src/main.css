@@ -1,0 +1,57 @@
+body {
+    background-color: #ffffe0;
+}
+
+#top-bar {
+    width: 100vw;
+    height: fit-content;
+    background-color: lightblue;
+}
+
+#header{
+    text-align: center;
+}
+
+#mainContainer{
+    height: 80vh;
+    width: 80vw;
+    border: 5px double black;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50vw;
+    top: 40vh;
+}
+
+.shown {
+    display: inline;
+}
+
+.hidden{
+    display: none;
+}
+
+#buttonContainer{
+    transform: translate(-50%,-50%);
+    border: 3px solid black;
+    padding: 3px;
+    left: 50vw;
+    width: fit-content;
+    position: relative;
+}
+
+.weekContainer {
+    width: 100%;
+    height: calc(20% - 2px);
+    background-color: gray;
+    border-bottom: 3px solid black;
+    position: static;
+    display: flex;
+}
+
+.box {
+    width: 14.2857%;
+    height: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    position: inline;
+}

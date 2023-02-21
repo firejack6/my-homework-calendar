@@ -1,0 +1,23 @@
+{
+    "name": "my-homework-calendar",
+    "description": "",
+    "version": "0.0.1",
+    "author": "firejack6 jf172@uakron.edu",
+    "scripts": {
+        "start": "http-server",
+        "open": "concurrently \"http-server -a localhost -p 8080\" \"open http://localhost:8080/src/main.html\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/firejack6/my-homework-calendar"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^7.6.0",
+        "http-server": "^14.1.1"
+    },
+    "dependencies": {
+        "open": "^8.4.2",
+        "require": "^2.4.20"
+    }
+}
