@@ -1,11 +1,27 @@
 body {
     background-color: #ffffe0;
+    margin: 0;
+    padding: 0;
+    width: 99.7vw;
+}
+
+p{
+    margin: 0px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
 }
 
 #top-bar {
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     background-color: lightblue;
+    position: relative;
+    border: 2px solid lightblue;
+    padding: 0;
+    margin: 0;
 }
 
 #header{
@@ -13,13 +29,13 @@ body {
 }
 
 #mainContainer{
-    height: 80vh;
+    height: 70vh;
     width: 80vw;
     border: 5px double black;
     position: relative;
-    transform: translate(-50%,-50%);
+    transform: translateX(-50%);
     left: 50vw;
-    top: 40vh;
+    /* top: 40vh; */
 }
 
 .shown {
@@ -36,13 +52,22 @@ body {
     padding: 3px;
     left: 50vw;
     width: fit-content;
-    position: relative;
+    position: absolute;
+    top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buttonSpacer{
+    height: 1vh;
+    width: 5vw;
+    background-color: transparent;
 }
 
 .weekContainer {
     width: 100%;
     height: calc(20% - 2px);
-    background-color: gray;
+    background-color: rgb(179, 179, 179);
     border-bottom: 3px solid black;
     position: static;
     display: flex;
@@ -54,4 +79,29 @@ body {
     border-left: 1px solid black;
     border-right: 1px solid black;
     position: inline;
+}
+
+.weekdays{
+    height: fit-content;
+    border-top: 5px double black;
+    border-left: 5px double black;
+    border-right: 5px double black;
+    margin: 0;
+    padding-top: -1vh;
+    font-size: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+    transform: translateX(-50%);
+    left: 50vw;
+    position: relative;
+    text-align: center;
+
+    /* transform: translateY(-20%); */
+}
+
+.weekdaytext{
+    width: 14.2857%;
+    height: 100%;
+    /* border: 2px solid black; */
 }

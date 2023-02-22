@@ -1,10 +1,62 @@
 [{
-    "2023":{
-        "Jan":{
-            "numDays": "31",
-            "startDay": "1"
-        }
+        "Jan":[{
+                "numDays": 31,
+                "startDay": 1
+            }],
 
-        
-    }
+            "Feb":[{
+                "numDays": 28,
+                "startDay": 4
+            }],
+    
+            "Mar":[{
+                "numDays": 31,
+                "startDay": 4
+            }],
+    
+            "Apr":[{
+                "numDays": 30,
+                "startDay": 7
+            }],
+    
+            "May":[{
+                "numDays": 31,
+                "startDay": 2
+            }],
+    
+            "Jun":[{
+                "numDays": 30,
+                "startDay": 5
+            }],
+    
+            "Jul":[{
+                "numDays": 31,
+                "startDay": 7
+            }],
+    
+            "Aug":[{
+                "numDays": 31,
+                "startDay": 3
+            }],
+    
+            "Sep":[{
+                "numDays": 30,
+                "startDay": 6
+            }],
+    
+            "Oct":[{
+                "numDays": 31,
+                "startDay": 1
+            }],
+    
+            "Nov":[{
+                "numDays": 30,
+                "startDay": 4
+            }],
+    
+            "Dec":[{
+                "numDays": 31,
+                "startDay": 6
+            }]
+            
 }]
