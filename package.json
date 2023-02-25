@@ -18,6 +18,8 @@
     },
     "dependencies": {
         "fs": "^0.0.1-security",
-        "open": "^8.4.2"
+        "open": "^8.4.2",
+        "requirejs": "^2.3.6",
+        "sqlite3": "^5.1.4"
     }
 }

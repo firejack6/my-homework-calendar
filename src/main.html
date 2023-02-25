@@ -5,9 +5,16 @@
     <link rel="icon" type="image/png" href="images/icon.png/"/>
     <link rel="stylesheet" href="main.css/" type="text/css"/>
     <script type="text/javascript" src="months.json"></script>
+    <script data-main="require/config" src="require/require.js"></script>
+    <script>
+        require(['config'], function() {
+            
+        })
+    </script>
     <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="sqlJS.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     </head>
 
     <body onload = "mainCalendar()">

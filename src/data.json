@@ -1,0 +1,34 @@
+[{
+    "Jan":[{
+        "1":[{
+            "assignment1":[{
+                "name":"DiffEQ HW1",
+                "due_time": 1000,
+                "class": "DiffEQ"
+            }]
+        }],
+
+        "2":[{
+            "assignment1":[{
+                "name": "MOS L12",
+                "due_time": 2359,
+                "class": "MOS"
+            }],
+            "assignment2":[{
+                "name": "Dyn 2",
+                "due_time" : 2359,
+                "class": "Dyn"
+            }]
+            
+        }]
+    }],
+    "Feb":[{
+        "10":[{
+            "assignment1":[{
+                "name": "MOS L14",
+                "due_time": 2359,
+                "class": "MOS"
+            }]
+        }]
+    }]
+}]

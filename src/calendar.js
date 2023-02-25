@@ -8,12 +8,12 @@ var currentYear = 2023;
 
 function mainCalendar(){
     //onload stuff
-    // indexDays(); 
     monthsJSON();
-    // console.log(currentMonth);
+    main();
 
     function monthsJSON(){
         bananas()
+
         async function bananas(){
             monthJSON = await fetch("months.json")
             .then(response => response.json())
@@ -26,7 +26,6 @@ function mainCalendar(){
             indexDays(second);
         }
     }
-
 
     function indexDays(second) { //creates box templates
         // console.log("called")
@@ -73,6 +72,8 @@ function mainCalendar(){
             function setupDays(formNumber,second){
                 // console.log(monthJSON)
                 // console.log(second)
+                var ahh = second;
+                var second = ahh;
                 var twoone = second[formNumber];
                 third = twoone[0];
                 // console.log(third);
