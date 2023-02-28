@@ -26,10 +26,23 @@ html{
 
 #header{
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50vw;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.monthButton{
+    height: 100%;
 }
 
 #mainContainer{
-    height: 70vh;
+    /* height: 70vh; */
+    height: fit-content;
     width: 80vw;
     border: 5px double black;
     position: relative;
@@ -58,6 +71,10 @@ html{
     justify-content: space-evenly;
 }
 
+#monthText{
+    position: relative;
+}
+
 #buttonSpacer{
     height: 1vh;
     width: 5vw;
@@ -66,11 +83,11 @@ html{
 
 .weekContainer {
     width: 100%;
-    height: calc(20% - 2px);
-    background-color: rgb(179, 179, 179);
+    height: 13vh;
     border-bottom: 3px solid black;
     position: static;
     display: flex;
+    background-color: grey;
 }
 
 .box {
@@ -104,4 +121,106 @@ html{
     width: 14.2857%;
     height: 100%;
     /* border: 2px solid black; */
+}
+
+
+.today{
+    background-color: lightblue;
+}
+
+.assignment{
+    /* text-align: justify; */
+    border: 1px solid black;
+    font-size: 2vh;
+    background-color: white;
+    position: relative;
+}
+
+.assignmentDone{
+    /* text-align: justify; */
+    border: 1px solid black;
+    font-size: 1.75vh;
+    background-color: lightgreen;
+    position: relative;
+}
+
+.addButton{
+    background-color: blueviolet;
+    width: 100%;
+    opacity: 0;
+}
+
+.addButtonHover{
+    opacity: 100;
+}
+
+.deleteButton{
+    background-color: red;
+    width: 25%;
+    right: 0;
+    opacity: 0%;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.deleteButtonHover{
+    opacity: 100;
+    width: 25%;
+    position: absolute;
+}
+
+.completeButton{
+    background-color: green;
+    width: 25%;
+    left: 0;
+    opacity: 0%;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.completeButtonHover{
+    opacity: 100;
+    width: 25%;
+    position: absolute;
+}
+
+.popupAddAssignment{
+    width: 300px;
+    height: 200px;
+    background-color: beige;
+}
+
+#popuplocation{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50vh;
+    left: 50vw;
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+    /* background-color: white; */
+}
+
+#iframeContainer{
+    z-index: 10;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50vh;
+    left: 50vw;
+
+    background-color: whitesmoke;
+}
+
+#addButtonTop{
+    position: absolute;
+    right: 10vw;
+    top: 5vh;
+}
+
+#refreshButton{
+    position: absolute;
+    left: 10vw;
+    top: 5vh;
 }

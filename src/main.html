@@ -2,17 +2,13 @@
 <html>
     <head>
     <title>Homework</title>
-    <link rel="icon" type="image/png" href="images/icon.png/"/>
-    <link rel="stylesheet" href="main.css/" type="text/css"/>
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
     <script type="text/javascript" src="months.json"></script>
-    <script data-main="require/config" src="require/require.js"></script>
-    <script>
-        require(['config'], function() {
-            
-        })
-    </script>
-    <script type="text/javascript" src="data.json"></script>
-    <script type="text/javascript" src="sqlJS.js"></script>
+    <script src="assignments.json"></script>
+    <script type="text/javascript" src="addAssignment.js"></script>
+    <script type="text/javascript" src="calendar.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8"/>
     </head>
@@ -20,14 +16,18 @@
     <body onload = "mainCalendar()">
         <div id="top-bar">
             <div id="header">
+                <button onclick="cycleBackward()" class="monthButton">&#8592</button>
                 <h2 id="monthText">Homework Calendar</h2>
+                <button onclick="cycleForward()" class="monthButton">&#8594</button>
             </div>
+            <button type="button" id="refreshButton" onclick(mainCalendar)>Refresh</button>
+            <button type="button" id="addButtonTop">Add Assignment</button>
         </div>
-        <div id="buttonContainer">
-            <button onclick="cycleBackward()" class="monthButton">&#8592</button>
-            <div id="buttonSpacer"></div>
-            <button onclick="cycleForward()" class="monthButton">&#8594</button>
+
+        <div id="iframeContainer" class="hidden">
+            <iframe id="iframe" src="popup.html" height="100%" width="100%"></iframe>
         </div>
+
         <div class="weekdays">
             <p class="weekdaytext">Sunday</p>
             <p class="weekdaytext">Monday</p>
@@ -54,7 +54,6 @@
 
 
 
-        <script src="/src/calendar.js"></script>
     </body>
 
 </html>
